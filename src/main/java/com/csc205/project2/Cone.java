@@ -11,10 +11,10 @@ public class Cone extends Shape{
         this.radius = 0.0;
     }
 
-    public Cone(double r, double h) {
+    public Cone(double radius, double height) {
         super();
-        this.height = h;
-        this.radius = r;
+        this.height = height;
+        this.radius = radius;
     }
 
     public double getHeight() {
@@ -32,12 +32,13 @@ public class Cone extends Shape{
     public void setRadius(double radius) {
         this.radius = radius;
     }
+
     public double surfaceArea() {
         return ((radius * Math.PI) * (radius + Math.sqrt(Math.pow(height, 2) + Math.sqrt(Math.pow(radius, 2)))));
     }
 
     public double volume() {
-        return (height/3.0) * Math.PI * Math.pow(radius, 2);
+        return (height / 3.0) * Math.PI * Math.pow(radius, 2);
     }
 
     @Override

@@ -9,9 +9,9 @@ public class Sphere extends Shape{
         this.radius = 0.0;
     }
 
-    public Sphere(double v) {
+    public Sphere(double radius) {
         super();
-        this.radius = v;
+        this.radius = radius;
     }
 
     public double getRadius() {
@@ -27,7 +27,7 @@ public class Sphere extends Shape{
     }
 
     public double volume() {
-        return (4.0/3.0) * Math.PI * Math.pow(radius, 3);
+        return (4.0 / 3.0) * Math.PI * Math.pow(radius, 3);
     }
 
     @Override

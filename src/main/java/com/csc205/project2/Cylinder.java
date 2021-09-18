@@ -11,10 +11,10 @@ public class Cylinder extends Shape{
         this.radius = 0.0;
     }
 
-    public Cylinder(double r, double h) {
+    public Cylinder(double radius, double height) {
         super();
-        this.height = h;
-        this.radius = r;
+        this.height = height;
+        this.radius = radius;
     }
 
     public double getHeight() {
@@ -39,6 +39,7 @@ public class Cylinder extends Shape{
     public double volume() {
         return Math.PI * Math.pow(radius, 2) * height;
     }
+
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("Cylinder {");
@@ -49,6 +50,4 @@ public class Cylinder extends Shape{
         sb.append('}');
         return sb.toString();
     }
-
-
-    }
+}

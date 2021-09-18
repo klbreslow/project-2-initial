@@ -47,6 +47,4 @@ public class Project2 {
 //        Cylinder cylinder = new Cylinder(1.0,4.0);
 //        System.out.println(cylinder);
     }
-
 }
-

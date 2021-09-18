@@ -9,9 +9,9 @@ public class Cube extends Shape{
         this.width = 0.0;
     }
 
-    public Cube(double v) {
+    public Cube(double width) {
         super();
-        this.width = v;
+        this.width = width;
     }
 
     public double getWidth() {
@@ -21,9 +21,11 @@ public class Cube extends Shape{
     public void setWidth(double width) {
         this.width = width;
     }
+
     public double surfaceArea() {
         return 6.0 * Math.pow(width, 2);
     }
+
     public double volume() {
         return Math.pow(width, 3);
     }
